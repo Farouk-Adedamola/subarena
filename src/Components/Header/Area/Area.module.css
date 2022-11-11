@@ -1,0 +1,180 @@
+.area {
+  /* display: grid;
+  place-items: center; */
+  height: 70vh;
+  /* height: 20rem; */
+  background-size: cover;
+  background-color: #fff;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 74, 117, 0.582),
+      rgba(0, 0, 0, 0.547)
+    ),
+    url("../../../Assets/systemDarkImage.jpg");
+  /* height: 20rem; */
+  padding-bottom: 2rem;
+}
+
+.main {
+  color: #fff;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* height: 70vh; */
+}
+
+.main h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  width: 70vw;
+}
+
+.main p {
+  width: 60vw;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.746);
+  /* font-variant: small-caps; */
+}
+
+.package {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 29%,
+    rgba(122, 170, 252, 1) 72%,
+    rgba(0, 74, 117, 1) 100%
+  );
+  padding: 0.2rem;
+  border-radius: 0 3rem 3rem 0;
+  margin-right: 0.5rem;
+  text-align: right;
+  font-size: 1.5rem;
+  /* color: #fff; */
+  color: #000;
+  position: relative;
+  top: -2rem;
+}
+
+.package span {
+  color: #004a75;
+}
+
+.package p {
+  padding-right: 3rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  word-spacing: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.learn {
+  background-color: #2573f9;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0 1.3rem 1.3rem 0;
+  text-align: center;
+  /* font-size: 1rem; */
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: -5rem;
+  /* font-weight: bold; */
+}
+
+.view {
+  background-color: #2573f9;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+  border-radius: 1.3rem 0 0 1.3rem;
+  text-align: center;
+  /* font-size: 1rem; */
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: -5rem;
+}
+
+@media screen and (min-width: 760px) {
+  .area {
+    background-size: cover;
+    background-color: #fff;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 74, 117, 0.582),
+        rgba(0, 0, 0, 0.547)
+      ),
+      url("../../../Assets/programming-image.jpg");
+    height: 85vh;
+  }
+  .main {
+    margin: 0 auto;
+  }
+  .main h2 {
+    padding-top: 2rem;
+    width: 65vw;
+    font-size: 4rem;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  .main p {
+    width: 50vw;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #1377ce;
+  }
+  .buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0.2rem;
+    width: 90vw;
+    margin-left: -1rem;
+    position: relative;
+    top: -1rem;
+  }
+
+  .package {
+    width: 50vw;
+    margin-left: 0;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    padding: 0.8rem 0;
+  }
+  .learn,
+  .view {
+    background-color: #2573f9;
+    padding: 0 1rem;
+    /* padding: 0.2rem; */
+    border-radius: 3rem;
+    /* margin-right: 0.5rem; */
+    text-align: center;
+    font-size: 1rem;
+    /* color: #fff; */
+    color: #000;
+    letter-spacing: 5px;
+    position: relative;
+    text-transform: uppercase;
+    top: -2rem;
+    margin-left: 4rem;
+    color: #fff;
+    /* font-weight: bold; */
+  }
+
+  .wrap {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+}

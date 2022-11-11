@@ -1,0 +1,54 @@
+.header {
+  margin: 0;
+  line-height: 1rem;
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004a75;
+  padding: 0.5rem;
+}
+
+.wrapper {
+  /* z-index: 1000; */
+  /* color: #fff; */
+}
+
+.manage {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.manage h4 {
+  letter-spacing: 1rem;
+}
+
+.logo {
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  line-height: 5px;
+  align-items: center;
+}
+.logo h4 {
+  letter-spacing: 1rem;
+  margin-top: 0;
+  /* font-size: 2rem; */
+}
+
+.logo h1 {
+  font-size: 3.5rem;
+}
+
+.subLogo {
+  /* position: relative; */
+  /* top: 0.8rem; */
+  line-height: 1px;
+}
+
+.icon {
+  font-size: 2rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
