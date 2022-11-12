@@ -105,6 +105,15 @@
   margin-left: -5rem;
 }
 
+/* @media screen and (min-width: 600px) {
+  .main p {
+    padding-bottom: 2rem;
+  }
+  .area {
+    height: 100vh;
+  }
+} */
+
 @media screen and (min-width: 760px) {
   .area {
     background-size: cover;
@@ -116,7 +125,7 @@
         rgba(0, 0, 0, 0.547)
       ),
       url("../../../Assets/programming-image.jpg");
-    height: 85vh;
+    height: 95vh;
   }
   .main {
     margin: 0 auto;
@@ -131,6 +140,7 @@
   .main p {
     width: 50vw;
     padding-top: 0;
+    padding-bottom: 2rem;
     margin-top: 0;
     font-size: 1.5rem;
     color: #1377ce;
@@ -168,13 +178,15 @@
     position: relative;
     text-transform: uppercase;
     top: -2rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
     color: #fff;
+    margin-right: 1rem;
     /* font-weight: bold; */
   }
 
   .wrap {
     display: flex;
+    flex-direction: row;
     /* justify-content: space-between; */
   }
 }
