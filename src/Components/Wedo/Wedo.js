@@ -12,19 +12,22 @@ const Wedo = () => {
           </div>
           <div className={classes.what}>our services</div>
         </div>
-        {list.map((service) => {
-          const { id, tag, name, text, css, work } = service;
-          return (
-            <div style={css} key={id} className={classes.container}>
-              <h1>
-                <span>{tag}</span>
-              </h1>
-              <h4>{work}</h4>
-              <p>{name}</p>
-              <p>{text}</p>
-            </div>
-          );
-        })}
+        <div></div>
+        <div className={classes.list}>
+          {list.map((service) => {
+            const { id, tag, name, text, css, work } = service;
+            return (
+              <div style={css} key={id} className={classes.container}>
+                <h1>
+                  <span>{tag}</span>
+                </h1>
+                <h4>{work}</h4>
+                <p>{name}</p>
+                <p>{text}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </Fragment>
   );
