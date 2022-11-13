@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
-import { FaQuoteRight } from "react-icons/fa";
+import { FaQuoteRight, FaRegGrinStars } from "react-icons/fa";
 import data from "./data";
 import "./Team.css";
 const Team = () => {
@@ -20,7 +20,7 @@ const Team = () => {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 5000);
+    }, 8000);
     return () => {
       clearInterval(slider);
     };
@@ -32,9 +32,7 @@ const Team = () => {
         <div className="underline"></div>
       </div>
       <div className="title">
-        <h2>
-          <span>/</span>Meat The Team
-        </h2>
+        <h2>Meat The Team</h2>
       </div>
       <div className="section-center">
         {people.map((person, personIndex) => {
@@ -54,18 +52,19 @@ const Team = () => {
           return (
             <article className={position} key={id}>
               <img src={image} alt={name} className="person-img" />
+              <FaRegGrinStars className="grin" />
               <h4>{name}</h4>
               <p className="title">{title}</p>
-              <p className="text">{quote}</p>
               <FaQuoteRight className="icon" />
+              <p className="text">{quote}</p>
             </article>
           );
         })}
         <button className="prev" onClick={() => setIndex(index - 1)}>
-          <FiChevronLeft />
+          <FiChevronLeft className="right" />
         </button>
         <button className="next" onClick={() => setIndex(index + 1)}>
-          <FiChevronRight />
+          <FiChevronRight className="right" />
         </button>
       </div>
     </section>

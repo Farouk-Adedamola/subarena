@@ -1,9 +1,9 @@
 .section {
   margin-top: 0;
   transform: translateY(-3rem);
-  width: 90vw;
+  width: 95vw;
   margin: 5rem auto;
-  /* background: #333333; */
+  background: #15314e;
   /* max-width: 700px; */
 }
 
@@ -76,17 +76,13 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
-}
-.title span {
-  font-size: 0.85em;
-  margin-right: 1rem;
-  font-weight: 700;
+  color: #fff;
 }
 
 .section-center {
   margin: 0 auto;
   margin-top: 4rem;
-  width: 80vw;
+  width: 90vw;
   height: 450px;
   max-width: 800px;
   text-align: center;
@@ -94,6 +90,7 @@
   display: flex;
   overflow: hidden;
 }
+
 .person-img {
   border-radius: 50%;
   margin-bottom: 1rem;
@@ -103,48 +100,72 @@
   border-left: 5px solid #15314e;
   box-shadow: 2px 4px #ff8a3d;
 }
+
 article h4 {
   text-transform: uppercase;
-  /* color: var(--clr-primary-5); */
   margin-bottom: 0.25rem;
 }
+
 .title {
   text-transform: capitalize;
   margin-bottom: 0.75rem;
-  /* color: var(--clr-grey-3); */
+  color: #ff8a3d;
+  font-weight: bold;
 }
+
 .text {
   max-width: 35em;
   margin: 0 auto;
   margin-top: 2rem;
   line-height: 2;
+  font-variant: small-caps;
+  color: #fff;
 }
 
 .icon {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 1rem;
-  /* color: var(--clr-primary-5); */
+  margin-bottom: 0;
+  color: #ff8a3d;
 }
+
+.grin {
+  font-size: 3rem;
+  position: inherit;
+  left: 6rem;
+  color: #15314e;
+  border-radius: 50%;
+  top: 6.5rem;
+}
+
 .prev,
 .next {
   position: absolute;
   top: 200px;
   transform: translateY(-50%);
-  /* background: var(--clr-grey-5); */
-  /* color: var(--clr-white); */
-  width: 1.25rem;
-  height: 1.25rem;
+  background: #15314e;
+  color: #ff8a3d;
+  /* font-size: 1.5rem; */
+  /* font-weight: bold; */
+  width: 2rem;
+  height: 2rem;
   display: grid;
   place-items: center;
   border-color: transparent;
   font-size: 1rem;
-  /* border-radius: var(--radius); */
+  border-radius: 2px;
   cursor: pointer;
-  /* transition: var(--transition); */
+  transition: all 1s;
 }
+
+.right {
+  font-size: 1.2rem;
+}
+
 .prev:hover,
 .next:hover {
-  /* background: var(--clr-primary-5); */
+  background: #004a75;
+  color: #fff;
 }
 .prev {
   left: 0;
