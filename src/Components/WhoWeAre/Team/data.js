@@ -6,18 +6,18 @@ const people = [
   {
     id: 1,
     image: farouk,
-    name: "Farouk adedamola",
-    title: "frontend engineer",
+    name: "Meet Farouk adedamola",
+    title: "web developer",
     quote:
-      "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
+      "Farouk adedamola is web developer with vast experience across various stacks. With experience worth over 3 years. ",
   },
   {
     id: 2,
     image: samad,
-    name: "Abdul samad",
+    name: "meet Abdul samad",
     title: "frontend engineer",
     quote:
-      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.",
+      "Abdul samad is a front end web developer with experience worth over 2years in frontend development",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const people = [
     name: "ishola victor",
     title: "backend engineer",
     quote:
-      "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
+      "Victor ishola is a passionate backend engineer with experience 2 years of coding eperience.",
   },
 ];
 

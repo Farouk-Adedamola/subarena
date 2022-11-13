@@ -28,9 +28,12 @@ const Team = () => {
 
   return (
     <section className="section">
+      <div className="undercontainer">
+        <div className="underline"></div>
+      </div>
       <div className="title">
         <h2>
-          <span>/</span>Team
+          <span>/</span>Meat The Team
         </h2>
       </div>
       <div className="section-center">

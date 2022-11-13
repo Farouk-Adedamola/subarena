@@ -7,17 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* margin: 1rem; */
 }
 
 code {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-@media screen and (max-width: 450px) {
-  body {
-    /* margin: 1rem; */
-  }
 }
