@@ -23,7 +23,6 @@
     rgba(122, 170, 252, 1) 48%,
     rgba(37, 115, 249, 1) 92%
   );
-  /* margin: 0 auto; */
   transition: all 1s;
   animation: yourAnimation 5s linear 0s infinite normal none;
 }

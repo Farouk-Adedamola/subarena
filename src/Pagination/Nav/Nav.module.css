@@ -1,0 +1,63 @@
+.sect {
+  background: #004a75;
+  height: 10vh;
+}
+
+.container {
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.container ul {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: -2rem !important;
+}
+
+.container ul li {
+  margin-left: 0.5rem;
+}
+
+.container ul li a {
+  color: #fff;
+}
+
+.contact {
+  width: 60vw;
+  display: flex;
+  justify-content: end;
+  margin-right: -1rem;
+  align-items: center;
+}
+
+.contact p {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailicon {
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.container span {
+  width: 1px;
+  height: 10vh;
+  color: #fff;
+  background: #fff;
+  margin-right: 5px;
+}
+
+.none {
+  display: none;
+}
