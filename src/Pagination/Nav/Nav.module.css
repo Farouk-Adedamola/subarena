@@ -1,6 +1,9 @@
 .sect {
   background: #004a75;
   height: 10vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000000;
 }
 
 .container {
