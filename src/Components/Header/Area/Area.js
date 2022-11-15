@@ -12,8 +12,11 @@ const Area = () => {
             packages
           </p>
         </div>
+        <button className={classes.button}>
+          <a href="">Learn more</a>
+        </button>
       </div>
-      <div className={classes.buttons}>
+      {/* <div className={classes.buttons}>
         <div>
           <div className={classes.package}>
             <p>
@@ -29,7 +32,7 @@ const Area = () => {
             <p>view packages</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </Fragment>
   );
 };

@@ -1,7 +1,9 @@
 .area {
   /* display: grid;
   place-items: center; */
-  height: 70vh;
+  position: relative;
+  top: 10vh;
+  /* height: 70vh; */
   /* height: 20rem; */
   background-size: cover;
   background-color: #fff;
@@ -38,10 +40,36 @@
   font-size: 1.2rem;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.746);
-  /* font-variant: small-caps; */
 }
 
-.package {
+.button {
+  margin: 0 auto;
+  background: #fff;
+  display: flex;
+  border: none;
+  justify-content: center;
+  border: 1px solid transparent;
+  padding: 0.8rem 1.2rem;
+}
+
+.button a {
+  text-decoration: none;
+  color: #004a75;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.button:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 0.8rem 1.2rem;
+
+  /* color: #004a75; */
+}
+
+/* .package {
+  position: relative;
+  top: 10vh;
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
@@ -51,13 +79,9 @@
   );
   padding: 0.2rem;
   border-radius: 0 3rem 3rem 0;
-  margin-right: 0.5rem;
-  text-align: right;
+  text-align: center;
   font-size: 1.5rem;
-  /* color: #fff; */
   color: #000;
-  position: relative;
-  top: -2rem;
 }
 
 .package span {
@@ -76,7 +100,7 @@
 .wrap {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 2.5rem auto;
   align-items: center;
   justify-content: center;
 }
@@ -86,11 +110,9 @@
   margin-top: 0.5rem;
   border-radius: 0 1.3rem 1.3rem 0;
   text-align: center;
-  /* font-size: 1rem; */
   text-transform: uppercase;
   color: #fff;
   margin-right: -5rem;
-  /* font-weight: bold; */
 }
 
 .view {
@@ -99,20 +121,10 @@
   margin-top: 0.5rem;
   border-radius: 1.3rem 0 0 1.3rem;
   text-align: center;
-  /* font-size: 1rem; */
   text-transform: uppercase;
   color: #fff;
   margin-left: -5rem;
 }
-
-/* @media screen and (min-width: 600px) {
-  .main p {
-    padding-bottom: 2rem;
-  }
-  .area {
-    height: 100vh;
-  }
-} */
 
 @media screen and (min-width: 760px) {
   .area {
@@ -144,15 +156,13 @@
     font-size: 1.5rem;
     color: #1377ce;
   }
+
   .buttons {
     display: flex;
     justify-content: start;
     align-items: center;
     padding: 0.2rem;
     width: 90vw;
-    margin-left: -1rem;
-    position: relative;
-    top: -1rem;
   }
 
   .package {
@@ -166,12 +176,9 @@
   .view {
     background-color: #2573f9;
     padding: 0 1rem;
-    /* padding: 0.2rem; */
     border-radius: 3rem;
-    /* margin-right: 0.5rem; */
     text-align: center;
     font-size: 1rem;
-    /* color: #fff; */
     color: #000;
     letter-spacing: 5px;
     position: relative;
@@ -180,12 +187,10 @@
     margin-left: 2rem;
     color: #fff;
     margin-right: 1rem;
-    /* font-weight: bold; */
   }
 
   .wrap {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
   }
-}
+} */
