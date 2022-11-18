@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect, useRef } from "react";
 import { links } from "./NavData";
-import { BiMenuAltRight } from "react-icons/bi";
+import { BiMenuAltRight, BiWindows } from "react-icons/bi";
 import ManageConnect from "../../Assets/Logo/ManageConnect-removebg.png";
 import classes from "./FixedNav.module.css";
 
@@ -16,13 +16,13 @@ const FixedNav = () => {
   // };
 
   useEffect(() => {
-    const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (toggle) {
-      linksContainerRef.current.style.height = `${linksHeight}px`;
+      linksContainerRef.current.style.height = `${100}vh`;
     } else {
       linksContainerRef.current.style.height = "0px";
     }
   }, [toggle]);
+
   return (
     <Fragment>
       <main className={classes.main}>
@@ -56,12 +56,14 @@ const FixedNav = () => {
             <div className={classes.article} ref={linksContainerRef}>
               <ul ref={linksRef}>
                 {links.map((menu) => {
-                  const { id, url, text, css } = menu;
+                  const { id, url, text, css, num } = menu;
                   return (
                     <li className={classes.menu} key={id}>
                       <a href={url} style={css}>
+                        <span>{num}</span>
                         {text}
                       </a>
+                      {/* <div className={classes.underline}></div> */}
                     </li>
                   );
                 })}

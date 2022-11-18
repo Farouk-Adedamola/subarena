@@ -7,7 +7,6 @@
   background: #004a75;
   height: 7vh;
   width: 100vw;
-  /* z-index: 1000000; */
   border: 1px solid #fff;
 }
 
@@ -98,5 +97,14 @@
 @media screen and (min-width: 920px) {
   .sect {
     display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    width: 100vw;
+  }
+  .sect {
+    display: none;
   }
 }
