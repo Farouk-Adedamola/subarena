@@ -1,11 +1,7 @@
 .area {
-  /* display: grid;
-  place-items: center; */
   position: relative;
   height: 40vh;
-  top: 7vh;
-  /* height: 70vh; */
-  /* height: 20rem; */
+  top: 20vh;
   background-size: cover;
   background-color: #fff;
   background-image: linear-gradient(
@@ -18,12 +14,9 @@
   padding-bottom: 2rem;
 }
 
-.typewriter {
-}
-
 .main {
-  position: relative;
-  top: 3rem;
+  /* position: relative; */
+  /* top: 3rem; */
   line-height: 2rem;
   text-align: center;
   font-size: 2.1rem;

@@ -1,9 +1,14 @@
+.main {
+  position: fixed;
+  z-index: 10000000000;
+}
+
 .sect {
   background: #004a75;
   height: 7vh;
-  position: fixed;
   width: 100vw;
-  z-index: 1000000;
+  /* z-index: 1000000; */
+  border: 1px solid #fff;
 }
 
 .container {
@@ -14,12 +19,12 @@
   width: 100vw;
 }
 
+/* the problem is from this container tr'y fixing it tomorrow */
 .container ul {
-  /* width: 30vw; */
   display: flex;
-  /* align-items: start; */
+  align-items: center;
+  margin-left: -2rem;
   list-style: none;
-  margin-left: -2rem !important;
 }
 
 .container ul li {
@@ -31,12 +36,12 @@
 }
 
 .contact {
+  position: absolute;
+  left: 35vw;
   width: 60vw;
   display: flex;
   justify-content: end;
-  margin-right: 1.5rem;
-  /* align-items: center; */
-  /* align-items: flex-start; */
+  margin-right: 1rem;
 }
 
 .contact p {
@@ -53,22 +58,45 @@
 .mailicon {
   color: #fff;
   margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .container span {
   align-self: start;
-  width: 5px;
+  width: 3px;
   height: 7vh;
   background: #fff;
   margin-right: 5px;
 }
 
-.none {
-  display: none;
-}
-
 @media screen and (max-width: 300px) {
   .sect {
     display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .none {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .sect {
+    display: none;
+  }
+  .contact {
+    position: absolute;
+    left: 37vw;
+  }
+  .contact p {
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .sect {
+    display: block;
   }
 }
