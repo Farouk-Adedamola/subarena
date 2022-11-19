@@ -6,10 +6,10 @@ const Area = () => {
     <Fragment>
       <div className={classes.area}>
         <div className={classes.main}>
+          <h1>
+            Developing to make a <span>difference</span>
+          </h1>
           <div className={classes.type}>
-            <h1>
-              Developing to make a <span>difference</span>
-            </h1>
             <TypewriterComponent
               className={classes.typewriter}
               // react typewriter using options
@@ -24,30 +24,31 @@ const Area = () => {
                 autoStart: true,
                 loop: true,
               }}
-              // react typewriter using methods
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString("Managed IT Services You Can Trust")
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .pauseFor(1000)
-                  .typeString("From idea to product")
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .pauseFor(2000)
-                  .typeString("End to End Development")
-
-                  .start();
-              }}
             />
           </div>
+          <button className={classes.button}>
+            <a href="/">contact us</a>
+          </button>
         </div>
-        <button className={classes.button}>
-          <a href="/">contact us</a>
-        </button>
       </div>
     </Fragment>
   );
 };
 
 export default Area;
+
+// react typewriter using methods
+// onInit={(typewriter) => {
+//   typewriter
+//     .typeString("Managed IT Services You Can Trust")
+//     .pauseFor(2000)
+//     .deleteAll()
+//     .pauseFor(1000)
+//     .typeString("From idea to product")
+//     .pauseFor(2000)
+//     .deleteAll()
+//     .pauseFor(2000)
+//     .typeString("End to End Development")
+
+//     .start();
+// }}
