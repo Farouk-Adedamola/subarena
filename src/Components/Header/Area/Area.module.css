@@ -81,6 +81,10 @@
   border-width: 0 3px 3px 0;
 }
 
+.button:hover {
+  background: transparent;
+}
+
 .button:hover::before,
 .button:hover::after {
   width: calc(100% + 27px);

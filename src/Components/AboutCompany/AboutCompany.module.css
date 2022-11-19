@@ -1,8 +1,7 @@
 .section {
   margin-top: 7rem;
   width: 90vw;
-  margin-left: 2rem;
-  /* margin-left: 1rem; */
+  margin-left: 1.5rem;
 }
 
 .services {
@@ -34,12 +33,22 @@
   font-weight: 700;
 }
 
-.container {
-  /* padding-top: 0.5rem; */
+.section p {
+  /* width: 85vw; */
+  text-align: left;
+  line-height: 1.6rem;
+  color: #15314e;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.section p span {
+  font-weight: 600;
+  color: #15314e;
 }
 
 .area {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   position: relative;
 }
 
@@ -52,22 +61,130 @@
 .area h2 {
   text-transform: capitalize;
   margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.tool {
+  display: none;
 }
 
 .text {
+  margin-top: 0.2rem;
   color: #6d6d6d;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .underline {
   width: 100%;
-  height: 1rem;
-  background-color: #bb93fc;
-  transform: scaleX(1);
+  height: 0.2rem;
+  background-color: #7141b1;
+  transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s;
 }
 
 .contain:hover + .underline {
-  transform: scaleX(0);
+  transform: scaleX(1);
+}
+
+@media screen and (min-width: 760px) {
+  .section {
+    margin-top: 16rem;
+    margin-left: 3rem;
+    padding: 0;
+  }
+
+  .section p {
+    padding-right: 3rem;
+    /* width: 80vw; */
+    font-size: 1.1rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1.7rem;
+  }
+
+  .area {
+    width: 40vw;
+  }
+
+  .underline {
+    width: 35vw;
+  }
+  .area p {
+    font-size: 2rem;
+  }
+
+  .contain h2 {
+    font-size: 1.4rem;
+  }
+
+  .text {
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .section {
+    margin-top: 12rem;
+    margin-left: 3rem;
+  }
+  .tool {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    background: #15314e;
+    width: 85vw;
+    border-radius: 0 18rem 18rem 0;
+  }
+
+  .subtools {
+    /* padding-left: 3.5rem; */
+    padding: 3rem;
+    width: 40vw;
+  }
+  .subtools h2 {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  .subtools p {
+    font-size: 1.3rem;
+    color: #ff8a3d;
+    font-weight: normal;
+  }
+
+  .tool img {
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+  }
+  .button {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    background: transparent;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+  }
+
+  .button a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .button:hover {
+    transform: scale(1.03);
+    border: 1px solid transparent;
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }
