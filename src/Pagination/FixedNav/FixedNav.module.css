@@ -29,7 +29,8 @@
 .fixed img {
   height: 90px;
   width: 110px;
-  background-size: cover;
+  /* background-size: cover; */
+  object-fit: cover;
 }
 
 .fixed button {
@@ -107,11 +108,14 @@
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
   }
 
   .fixed img {
-    height: 105px;
-    width: 150px;
+    height: 110px;
+    width: 130px;
+    object-fit: cover;
+    padding-right: 1.5rem;
   }
 
   .fixed button {
@@ -139,8 +143,8 @@
   .article ul li a {
     margin-right: 7px;
     /* font-weight: bold; */
-    font-size: 0.9rem;
-    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+    /* padding: 0.5rem 0.6rem; */
     border-radius: 0.4rem;
     transition: all 1s;
   }
@@ -152,6 +156,5 @@
   .article ul li a:hover {
     background: #15314e;
     color: #fff;
-    /* background: #e67e22; */
   }
 }

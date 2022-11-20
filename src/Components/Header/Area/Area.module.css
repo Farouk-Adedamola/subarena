@@ -117,6 +117,10 @@
 }
 
 @media screen and (min-width: 760px) {
+  .area {
+    position: relative;
+    top: 10vh;
+  }
   .main {
     font-size: 2rem;
     line-height: 3rem;
@@ -155,6 +159,8 @@
 @media screen and (min-width: 920px) {
   .area {
     height: 100vh;
+    position: relative;
+    top: 20vh;
   }
 
   .type {
