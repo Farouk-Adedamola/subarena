@@ -63,7 +63,6 @@
 .article ul {
   transform: translateY(-20vh);
   list-style-type: none;
-  /* transform: translateY(-1rem); */
   margin-left: -2rem;
   line-height: 3rem;
 }
@@ -71,7 +70,7 @@
 .article ul li {
   background: transparent;
   padding: 0.3rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s;
   text-align: center;
 }
 
@@ -79,15 +78,14 @@
   text-decoration: none;
   font-size: 1.6rem;
   color: #000;
+  padding: 0.5rem 0.3rem;
   letter-spacing: 0.2rem;
   text-transform: capitalize;
   color: #00c4cc;
 }
 
 .article ul li:hover {
-  font-weight: bold;
   transform: translateX(1rem);
-  padding: 0.4rem;
 }
 
 /* media screens display styles */
@@ -156,5 +154,11 @@
   .article ul li a:hover {
     background: #15314e;
     color: #fff;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .article ul li a {
+    padding: 1rem;
   }
 }
